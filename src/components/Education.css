@@ -1,0 +1,18 @@
+.education {
+    margin-top: 20px;
+}
+
+.education .card {
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgba(240, 248, 255, 0.241);
+}
+
+.education .card h2 {
+    color: black;
+    text-shadow: 2px 2px rgba(240, 248, 255, 0.241);
+}
+
+.education .education-item {
+    margin-bottom: 10px;
+}

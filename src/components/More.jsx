@@ -5,7 +5,7 @@ const More = ({ languages, habilities, volunteer }) => {
   return (
     <div className="more">
       <div className="card">
-        <h2>More</h2>
+        <h2 className="more-title">More</h2>
         <div>
           <p>
             Language: {languages.language} (Writing: {languages.wrlevel}, Speaking: {languages.splevel})
@@ -13,7 +13,7 @@ const More = ({ languages, habilities, volunteer }) => {
         </div>
         <div>
           <h3>Habilities</h3>
-          <ul>
+          <ul className="list">
             {habilities.map((item, index) => (
               <li key={index}>{item}</li>
             ))}

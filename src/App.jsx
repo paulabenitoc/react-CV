@@ -13,21 +13,21 @@ function App() {
   const [showEducation, setShowEducation] = useState(true);
 
   return (
-    <div className="App">
+    <div>
       <Hero hero={hero} />
       <About hero={hero} />
-      <button
-        className="custom-btn btn-4"
-        onClick={() => setShowEducation(true)}
-      >
+      <div className="btn">
+        <button className="btn-1"
+          onClick={() => setShowEducation(true)}
+        >
         Education
-      </button>
-      <button
-        className="custom-btn btn-4"
-        onClick={() => setShowEducation(false)}
-      >
+        </button>
+        <button
+          onClick={() => setShowEducation(false)}
+        >
         Experience
-      </button>
+        </button>
+      </div>
       <div>
         {showEducation ? (
           <Education education={education} />

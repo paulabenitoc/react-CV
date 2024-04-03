@@ -9,14 +9,14 @@ const Hero = ({ hero }) => {
         <h2>
           {hero.name} {hero.address}
         </h2>
-        <p>🗺️{hero.city} </p>
-        <p>🗓️{hero.birthDate}</p>
+        <p>📍 {hero.city} </p>
+        <p>{hero.birthDate}</p>
         <p>
-          📧
-          <a href={"mailto:" + hero.email}>{hero.email}</a>
+          📧 
+           <a href={"mailto:" + hero.email}>{hero.email}</a>
         </p>
         <p>📱 {hero.phone}</p>
-        <p>💾<a href={hero.gitHub}>GitHub</a></p>
+        <p>💾 <a href={hero.gitHub}>GitHub</a></p>
       </div>
     </div>
   );
